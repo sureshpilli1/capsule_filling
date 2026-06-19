@@ -1,0 +1,671 @@
+What does ZRO mean?
+According to ACG, ZRO is based on Zero Relative Motion (ZRM) technology.
+Let's break it down:
+Relative motion = movement of one object with respect to another.
+Zero Relative Motion = at the critical filling point, the powder dosing mechanism and capsule move together at the same speed, so there is almost no relative movement between them.
+
+Why is this important?
+In ZRO technology:
+Powder enters the capsule more smoothly.
+Powder wastage is reduced.
+Dust generation is minimized.
+Better fill-weight accuracy is achieved.
+Difficult powders (sticky, fluffy, hygroscopic, heat-sensitive powders) can be handled more effectively.
+
+Internal motors of ZRO machine:
+Simple analogy:
+
+MAIN MOTOR      = Heart
+GEARBOX         = Muscles
+CAMSHAFT        = Nervous System
+SERVO MOTORS    = Hands
+SENSORS         = Eyes
+PLC             = Brain
+
+
+
+
+
+
+
+Level 1: Electrical Power Enters Machine
+415V AC Supply
+        │
+        ▼
+ Main MCCB
+        │
+        ▼
+ Servo Drives
+        │
+        ▼
+ Motors
+
+1.Main MCCB
+ 
+
+Main Parts of an MCCB
+┌─────────────────┐
+ │   MCCB Body                │
+ ├─────────────────┤
+ │ ON/OFF Handle           │
+ ├─────────────────┤
+ │ Trip Unit                       │
+ ├─────────────────┤
+ │ Incoming Term.           │
+ ├─────────────────┤
+ │ Outgoing Term.          │
+ └─────────────────┘
+How Does It Coordinate With Motors?
+Suppose the main drive motor develops a short circuit:
+Motor Fault
+     │
+     ▼
+Current Increases
+     │
+     ▼
+MCCB Trips
+     │
+     ▼
+Machine Stops
+
+2. Contactor
+After the MCCB, power goes to the contactor.
+Function
+A contactor is an electrically operated switch.
+PLC Signal
+     │
+     ▼
+ Contactor Coil
+     │
+     ▼
+ Main Contacts Close
+     │
+     ▼
+ Motor Starts
+The PLC does not directly power the motor.
+Instead it energizes the contactor.
+
+
+3. Overload Relay (OLR)
+Usually mounted below the contactor.
+Contactor
+    │
+    ▼
+Overload Relay
+    │
+    ▼
+Motor
+
+Function
+Protects motor from excessive current.
+4. SMPS (Power Supply)
+The PLC does not run on 415V.
+It needs 24V DC.
+Function
+Supplies power to:
+•	PLC 
+•	Sensors 
+•	Solenoid valves 
+•	Relays
+5. PLC (Brain of the Machine)
+PLC = Programmable Logic Controller
+Think of it as the machine's brain.
+        PLC
+         │
+ ┌───────┼───────┐
+ ▼       ▼       ▼
+Motor  Sensor  Valve
+
+
+6. VFD (Variable Frequency Drive)
+A VFD controls motor speed.
+Without VFD:
+Motor speed: 1400 RPM Always
+With VFD:
+20 Hz = 560 RPM
+30 Hz = 840 RPM
+50 Hz = 1400 RPM
+Machine speed can be adjusted.
+In ZRO Machine
+VFD commonly controls:
+•	Main drive motor 
+•	Hopper agitator motor 
+•	Feed motors 
+
+7. Servo Drive
+More advanced than VFD.
+PLC
+ │
+ ▼
+Servo Drive
+ │
+ ▼
+Servo Motor
+Difference
+VFD:
+Control Speed
+Servo:
+Control Speed
++
+Position
++
+Direction
+Example:
+Move exactly:
+5°
+8. Servo Motor
+Inside:
+Motor
++
+Encoder
++
+Feedback
+Encoder
+Encoder tells PLC:
+Current Position
+Example:
+0°
+5°
+10°
+15°
+PLC always knows motor position.
+Why Servo is Important in ZRO
+Remember:
+Zero Relative Motion
+The machine must synchronize:
+Capsule Position
+      =
+Dosing Position
+Servo motors help achieve this.
+
+
+
+
+
+
+
+9. Solenoid Valve
+Used for:
+Compressed Air
+Control.
+PLC
+ │
+ ▼
+Solenoid Valve
+ │
+ ▼
+Air Cylinder
+
+Example
+Capsule reject mechanism.
+PLC
+ │
+ ▼
+Valve ON
+ │
+ ▼
+Cylinder Pushes
+ │
+ ▼
+Reject Capsule
+
+10. Pneumatic Cylinder
+Converts air pressure into motion.
+Compressed Air
+      │
+      ▼
+Cylinder
+      │
+      ▼
+Movement
+Used in:
+•	Capsule feeding 
+•	Reject stations 
+•	Door locks 
+•	Cleaning systems
+
+11. Sensors
+•	Machine eyes.
+•	Proximity Sensor
+•	Detects metal.
+•	Metal Present?
+•	Photoelectric Sensor
+•	Uses light.
+•	Object Present?
+•	Pressure Sensor
+•	Measures:
+•	Vacuum
+Air Pressure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+How a Capsule Gets Filled (Electrical View)
+START Button
+      │
+      ▼
+PLC
+      │
+      ▼
+Main Motor Starts
+      │
+      ▼
+Turret Rotates
+      │
+      ▼
+Vacuum Motor Runs
+      │
+      ▼
+Capsule Separates
+      │
+      ▼
+Agitator Motor Runs
+      │
+      ▼
+Powder Available
+      │
+      ▼
+Servo Synchronization
+      │
+      ▼
+Capsule Filled
+      │
+      ▼
+Ejected
+
+
+The main motor does NOT directly drive each station separately.
+Instead, one motor drives a main shaft, and the main shaft drives multiple mechanisms through:
+•	Gearboxes 
+•	Gears 
+•	Cams 
+•	Followers 
+•	Timing belts 
+•	Chains 
+•	Couplings
+Main Motor
+    │
+    ▼
+Gearbox
+    │
+    ▼
+Main Shaft
+    │
+ ┌──┼──┬──┬──┬──┐
+ ▼  ▼  ▼  ▼  ▼
+Turret
+Cam
+Vacuum timing
+Closing
+Ejection
+
+
+
+
+Let's Start from the Motor
+Step 1: Main Motor Rotates
+Main Motor
+    │
+    ▼
+1400 RPM
+Motor produces rotational motion only
+Step 2: Gearbox Reduces Speed
+1400 RPM
+    │
+    ▼
+Gearbox
+    │
+    ▼
+70 RPM
+The gearbox increases torque and reduces speed.
+Step 3: Main Shaft Rotates
+Gearbox
+   │
+   ▼
+Main Shaft
+The main shaft runs through the machine.
+Think of it as the backbone.
+How Does It Rotate the Turret?
+A gear is attached to the shaft.
+Main Shaft
+    │
+    ▼
+Drive Gear
+    │
+    ▼
+Turret Gear
+As the shaft rotates:
+Main Shaft →
+     │
+     ▼
+Turret →
+
+
+Now capsules move from station to station.
+
+How Does It Separate Capsules?
+This is where cams come in.
+A cam is attached to the same shaft.
+Main Shaft
+     │
+     ▼
+     Cam
+As the shaft rotates:
+Cam rotates
+The follower moves up and down.
+Cam
+ │
+ ▼
+Follower
+ │
+ ▼
+Separation Pin
+Result:
+Cap lifts
+Body remains
+Capsule separates.
+
+How Does It Close Capsules?
+Another cam is mounted on the same shaft.
+Main Shaft
+   │
+   ▼
+Closing Cam
+As it rotates:
+Cam pushes
+
+Cap ↓
+
+Body ↑
+Capsule closes.
+How Does It Eject Capsules?
+Yet another cam.
+Main Shaft
+    │
+    ▼
+Ejection Cam
+Cam moves ejector pin.
+Pin →
+Finished capsule is pushed out.
+
+Real Mechanical Layout
+               Turret
+                 ▲
+                 │
+                 │
+Main Shaft ──────┼─────────
+                 │
+                 │
+         Cam 1 → Separation
+
+         Cam 2 → Filling
+
+         Cam 3 → Closing
+
+         Cam 4 → Ejection
+One shaft.
+Many cams.
+Many functions.
+
+Why Do All Stations Stay Synchronized?
+Because they are connected to the same shaft.
+Example:
+Suppose shaft rotates:
+360°
+At:
+0°
+Capsule enters.
+At:
+90°
+Capsule separates.
+At:
+180°
+Capsule fills.
+At:
+270°
+Capsule closes.
+At:
+360°
+Capsule ejects.
+Everything is mechanically timed.
+
+
+Why Multiple Cams?
+Suppose the turret makes one complete revolution.
+0°    Capsule enters
+
+90°   Capsule separates
+
+180°  Powder fills
+
+270°  Capsule closes
+
+360°  Capsule ejects
+Different cams are designed so that their followers move at exactly the right shaft angle.
+
+
+
+
+
+
+
+Simple Definition
+A cam is a specially shaped rotating part that converts:
+Rotary Motion
+      ↓
+Linear Motion
+For example:
+Motor rotates
+      ↓
+Shaft rotates
+      ↓
+Cam rotates
+      ↓
+Follower moves up/down
+Unlike a normal wheel, a cam is not perfectly round
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 Turret
+
+                    ▲
+                    │
+
+Main Shaft ==================================
+
+    │          │          │          │
+
+    ▼          ▼          ▼          ▼
+
+ Separation   Filling   Closing   Ejection
+    Cam        Cam        Cam       Cam
+
+    │          │          │          │
+
+    ▼          ▼          ▼          ▼
+
+ Separation   Dosing    Closing   Ejector
+   Pins       Unit      Pins      Pins
+
+
+How Does It Work in a Capsule Filling Machine?
+In a ZRO90:
+Separation Cam
+Cam rotates
+      ↓
+Pin moves up
+      ↓
+Capsule cap lifts
+Closing Cam
+Cam rotates
+      ↓
+Closing pin moves
+      ↓
+Cap joins body
+Ejection Cam
+Cam rotates
+      ↓
+Ejector pin moves
+      ↓
+Capsule pushed out
+
+
+Cam images:
+  
+
+
+Follower
+The follower is the part that touches the cam.
+Follower
+    ▲
+    │
+    │
+   (●)  ← Roller
+As the cam rotates:
+High point of cam
+        ↓
+Follower moves UP
+
+Low point of cam
+        ↓
+Follower moves DOWN
+
+
+They operate different parts of the machine, but those parts must be synchronized.
+Main Motor Operates
+Main Motor
+    ↓
+Gearbox
+    ↓
+Main Shaft
+    ↓
+Turret
+    ↓
+Cam Mechanisms
+The main motor is responsible for moving the entire machine cycle.
+
+Servo Motor Operates
+Servo Motor
+    ↓
+Specific Mechanism
+Examples in modern machinery:
+•	Filling mechanism 
+•	Dosing disc 
+•	Positioning mechanism 
+•	Product feed mechanism 
+depending on the machine design.
+
+Example
+Suppose the turret is carrying a capsule body.
+Main Motor
+    ↓
+Turret rotates
+    ↓
+Capsule reaches filling station
+Then:
+Servo Motor
+    ↓
+Controls filling mechanism
+    ↓
+Transfers powder accurately
+The servo does not rotate the turret. The main motor does.
+How Do They Work Together?
+PLC
+ │
+ ├── VFD
+ │     │
+ │     ▼
+ │  Main Motor
+ │
+ └── Servo Drive
+       │
+       ▼
+    Servo Motor
+The PLC coordinates both.
+PLC tells Main Motor
+Run machine at production speed
+PLC tells Servo Motor
+Match the filling mechanism position now
+
+What Makes a Servo Special?
+A normal motor does not know its position.
+A servo motor has an encoder attached.
+Servo Motor
+      │
+      ▼
+Encoder
+      │
+      ▼
+Feedback
+The encoder continuously tells the servo drive:
+Current Position
+Current Speed
+Current Direction
+So the servo always knows exactly where it is.
+
+
+
+
+Encoder images:
+
+  
+
+
+
+Then Why Do We Need a Servo Motor in ZRO?
+Because some motions require precision that cams cannot provide easily.
+The main motor handles:
+Turret rotation
+Capsule transport
+Separation
+Closing
+Ejection
+The servo handles:
+Precise filling synchronization
+Position correction
+ZRO motion control
+So think of it this way:
+Main Motor = Moves the entire machine
+
+Servo Motor = Fine-tunes the critical filling operation
+This distinction is the key to understanding modern capsule filling machines like the ZRO 90.
+
+
+
+
+
+
+
