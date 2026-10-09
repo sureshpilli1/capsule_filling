@@ -667,5 +667,10 @@ This distinction is the key to understanding modern capsule filling machines lik
 
 
 
-
-
+| Component | Purpose | What Moves It | Common Wear | Failure Symptoms |
+|-----------|----------|---------------|----------------|------------------|
+| Main motor | Power source | VFD/direct drive | Bearings | Machine won't run |
+| Gearbox | Reduce speed, increase torque | Main motor | Gears, bearings | Noise, vibration |
+| Guide block | Holds all tamping blocks | Cam and guide shafts | Guides, bushings | Uneven tamping |
+| SS cover | Guides pins and supports wiper | Fixed | Guide holes | Pin wear, sticking |
+| Wiper block | Controls powder entering dosing bores | Fixed | Wiper edge | Fill variation, powder leakage |
