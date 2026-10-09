@@ -1,7 +1,11 @@
 TRAMADOL HYDROCHLORIDE CAPSULES BP 50 MG:
 ---------------------------------------
-dosing disc used: 13 mm size 5 
+dosing disc used: 15 mm size 5 
 only one dosing disc is available 
+why we are unable to run tramadol capsules in CFM-006 even though both CFM-03 and CFM-06 are same model
+what is the difference between both machines
+as per sanjay CFM-006 gives jerk and tamping pins goes into the bushes 
+while in CFM-003 tamping pins just touches the bushes and it does not give the jerk 
 
 
 
@@ -18,3 +22,17 @@ springs used:
 
 PREGABALIN CAPSULES 225 MG:
 ----------------------------
+
+
+
+
+
+RAMIPRIL CAPSULES BP 2.5 MG:(RLM- CANADA)
+---------------------------
+dosing disc used 11.5
+dosing disc given in the BMR 13.0
+
+
+
+PREGABALIN CAPSUELS 300 MG:
+--------------------------
