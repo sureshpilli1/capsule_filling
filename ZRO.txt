@@ -672,3 +672,1133 @@ This distinction is the key to understanding modern capsule filling machines lik
 | Guide block     | Holds all tamping blocks              | Cam and guide shafts | Guides, bushings | Uneven tamping |
 | SS cover        | Guides pins and supports wiper        | Fixed                | Guide holes      | Pin wear, sticking |
 | Wiper block     | Controls powder entering dosing bores | Fixed                | Wiper edge       | Fill variation, powder leakage |
+
+
+
+
+
+
+
+
+
+
+can you please show me in images how separation, filling, closing, ejection cams are connected to main shaft in ZRO90 and how the motion is transferred to a distant location of capsule separation
+
+
+1. Main Shaft with Multiple Cams
+Imagine opening the drive side cover.
+                Main Shaft
+================================================
+
+   [Cam1]    [Cam2]    [Cam3]    [Cam4]
+      |         |         |         |
+      V         V         V         V
+
+ Separation  Filling   Closing   Ejection
+All cams rotate together because they are mounted on the same shaft.
+When the main shaft turns once:
+0°     Separation
+
+90°    Filling
+
+180°   Closing
+
+270°   Ejection
+
+360°   Cycle Complete
+
+2. How a Cam Operates a Distant Mechanism
+The separation station may be physically far away from the camshaft.
+The motion is transferred through:
+Cam
+ ↓
+Follower
+ ↓
+Lever
+ ↓
+Link Rod
+ ↓
+Separation Pin
+Example:
+Drive Side
+
+ Cam
+  O
+  |
+Follower
+  |
+Link Rod
+=============================
+                         |
+                         |
+                    Separation
+                       Pin
+The rod carries the motion to the separation station.
+________________________________________
+3. Separation Cam Example
+       Follower
+           ▲
+           │
+        ___│___
+      /         \
+     /   CAM     \
+      \_________/
+
+           │
+           ▼
+      Link Rod
+           │
+           ▼
+    Capsule Lift Pin
+When the high point of the cam arrives:
+Cam rotates
+     ↓
+Follower rises
+     ↓
+Rod rises
+     ↓
+Pin rises
+     ↓
+Capsule cap separates
+________________________________________
+4. Closing Cam Example
+Closing Cam
+      │
+      ▼
+Follower
+      │
+      ▼
+Push Rod
+      │
+      ▼
+Closing Plunger
+At the correct turret position:
+Cam pushes
+     ↓
+Plunger moves
+     ↓
+Cap joins body
+________________________________________
+5. Ejection Cam Example
+Ejection Cam
+      │
+      ▼
+Follower
+      │
+      ▼
+Ejector Rod
+      │
+      ▼
+Ejector Pin
+The pin pushes the finished capsule out.
+________________________________________
+6. Top View of the Machine
+Think of the turret as a large circle.
+                  Turret
+
+            [1] Separation
+
+       [10]             [2]
+
+   [9]                     [3]
+
+       [8]             [4]
+
+            [7] [6] [5]
+Below the turret is a stationary cam system.
+                 Turret
+
+          OOOOOOOOOOOOOOO
+
+        -------------------
+         Stationary Cams
+As the turret rotates:
+Capsule moves
+     ↓
+Stationary cam profile
+     ↓
+Movement occurs
+This is why one rotating shaft can operate many stations.
+7. What Maintenance Engineers Actually See
+When the side cover is removed:
+Motor
+  │
+Coupling
+  │
+Gearbox
+  │
+Main Shaft
+  │
+ ├── Cam 1
+ ├── Cam 2
+ ├── Cam 3
+ ├── Cam 4
+ │
+Followers
+ │
+Linkages
+ │
+Machine Stations
+The cams are usually close together near the drive section.
+The stations are often several feet away.
+Motion is transmitted through:
+	Link rods 
+	Levers 
+	Rocker arms 
+	Push rods 
+	Guide blocks 
+For your ZRO90 learning
+The biggest misconception is:
+"The cam must be located right next to the separation station."
+Actually, in most industrial machines:
+Cam Location ≠ Working Location
+The cam creates the motion, and rods/levers transfer that motion to wherever it is needed.
+If you can get a photo of the drive side of your ZRO90 (the side with the motor and gearbox), I can draw arrows on it and explain:
+	Main shaft 
+	Each visible cam 
+	Followers 
+	Link rods 
+	How motion reaches the separation, filling, closing, and ejection stations. 
+ 
+What to observe in these images
+Image 1 (top left)
+Cam
+ ↓
+Roller Follower
+ ↓
+Connecting Rod
+ ↓
+Bell Crank
+ ↓
+Tooling / Mechanism
+This is very similar to how a motion can travel from a cam near the drive section to a station located far away.
+
+
+
+ 
+
+Image 2 (top right)
+Camshaft
+   ↓
+Cam
+   ↓
+Follower
+   ↓
+Push Rod
+   ↓
+Rocker Arm
+   ↓
+Valve
+This is an excellent example of motion transmission.
+The cam may be at the bottom.
+The actual work happens far away at the top.
+
+
+How to Imagine a ZRO90
+Think of the machine like this:
+Main Motor
+     │
+     ▼
+  Gearbox
+     │
+     ▼
+ Main Shaft
+================================================
+
+ Cam-1   Cam-2   Cam-3   Cam-4
+
+  │        │       │       │
+  ▼        ▼       ▼       ▼
+
+ Sep.    Fill    Close   Eject
+ Link    Link    Link    Link
+
+  │        │       │       │
+  ▼        ▼       ▼       ▼
+
+Station Station Station Station
+All cams rotate together because they are mounted on the same shaft. The cam shape determines when a station moves. 
+The separation station can be several feet away from the cam.
+Motion path:
+Cam
+ ↓
+Roller Follower
+ ↓
+Lever
+ ↓
+Connecting Rod
+ ↓
+Guide Block
+ ↓
+Separation Pin
+ ↓
+Capsule Cap Lift
+This is exactly the same principle shown in the first image where the connecting rod transfers motion from the cam to a distant mechanism.
+
+Generic Capsule Filling Machine Architecture
+Forget AF90 and ZRO90 for a moment.
+Every automatic capsule filling machine can be understood as:
+Power System
+      ↓
+Motion Transmission System
+      ↓
+Turret System
+      ↓
+Capsule Handling System
+      ↓
+Powder Filling System
+      ↓
+Closing System
+      ↓
+Ejection System
+________________________________________
+Layer 1: Power Generation
+Everything starts here.
+Main Motor
+    ↓
+Coupling
+    ↓
+Gearbox
+Main Motor
+Produces:
+Rotation
+Only rotation.
+Nothing else.
+________________________________________
+Gearbox
+Converts:
+High Speed
+Low Torque
+into
+Low Speed
+High Torque
+The torque concept is:
+τ=rFsin⁡(θ)
+F
+N
+r
+m
+θ
+deg
+F is force; r is distance from pivot; θ is force angle.
+τ=rFsin⁡(θ)=3⋅6⋅sin⁡(90^∘)=18" N m" 
+Only the perpendicular part of F turns the lever.
+pivotr = 3 mθ = 90°F⊥ = 6 NFτ = 18 N m
+For a heavy turret, torque is more important than speed.
+________________________________________
+Layer 2: Motion Distribution
+After gearbox:
+Gearbox
+    ↓
+Main Shaft
+Main shaft becomes the machine's backbone.
+Main Shaft
+=========================
+From this shaft motion is distributed to:
+Turret
+
+Capsule Rectification
+
+Separation
+
+Filling
+
+Closing
+
+Ejection
+________________________________________
+Layer 3: Cam System
+The motor only rotates.
+But machine stations require:
+Up
+
+Down
+
+Forward
+
+Backward
+motions.
+Therefore:
+Rotary Motion
+      ↓
+Cam
+      ↓
+Linear Motion
+________________________________________
+Cam and Follower
+Cam Rotates
+      ↓
+Follower Moves
+       Follower
+           ▲
+           │
+      _____│_____
+    /             \
+   /     CAM       \
+    \_____________/
+The cam shape determines motion.
+________________________________________
+Layer 4: Motion Transfer
+Often the station is far away.
+Therefore:
+Cam
+ ↓
+Follower
+ ↓
+Link Rod
+ ↓
+Bell Crank
+ ↓
+Machine Part
+________________________________________
+Bell Crank
+Changes direction.
+Example:
+Rod →
+becomes
+Pin ↑
+________________________________________
+Layer 5: Turret
+This is the heart of the machine.
+        Turret
+
+   O O O O O O O O
+The turret continuously rotates.
+Capsules move station to station.
+________________________________________
+Layer 6: Bushes and Segments
+Each capsule sits in:
+Upper Segment
+
+Capsule
+
+Lower Segment
+________________________________________
+Question
+How do bushes move?
+Answer:
+Cam Track
++
+Roller
+________________________________________
+Stationary Cam Track
+Turret Rotates
+but
+Cam Track
+Does Not Rotate
+The roller follows the track.
+The track shape forces movement.
+________________________________________
+Capsule Separation
+Before separation:
+ Cap
+ │
+Body
+After separation:
+ Cap ↑
+
+
+ Body ↓
+________________________________________
+How?
+Cam Track
+      ↓
+Roller
+      ↓
+Upper Bush
+      ↓
+Moves Up
+________________________________________
+Filling Station
+Now the body is empty.
+Capsule Body
+waits for powder.
+________________________________________
+Generic Filling Principle
+Three possibilities:
+Dosator
+
+Tamping
+
+ZRO
+Different machines use different methods.
+________________________________________
+Closing Station
+Capsule must be joined.
+Cap
+ ↓
+
+Body
+Again:
+Cam
+ ↓
+Follower
+ ↓
+Pin
+creates the motion.
+________________________________________
+Ejection Station
+Finished capsule:
+Capsule
+must leave turret.
+Mechanism:
+Cam
+ ↓
+Follower
+ ↓
+Ejector Pin
+ ↓
+Capsule Out
+________________________________________
+Pneumatic System
+Some movements are easier with air.
+Therefore:
+PLC
+ ↓
+Solenoid Valve
+ ↓
+Compressed Air
+ ↓
+Cylinder
+________________________________________
+Electrical System
+The brain:
+PLC
+Controls:
+Sensors
+
+Motors
+
+Valves
+
+Alarms
+________________________________________
+Encoder Concept
+Encoder tells control system:
+Position
+
+Speed
+
+Direction
+Without encoder:
+Motor Turning
+With encoder:
+Motor Turning
++
+Known Position
+
+
+
+
+
+
+today I observed that there is only one main motor in the ZRO90 and ZRO200 machine there are no servo motors and my operator told me that difference between AF90 and ZRO90 is sliding plates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Station 1 – Capsule Loading
+Function:
+Capsule enters bushes
+Upper segment receives cap.
+Lower segment receives body.
+Possible defects:
+	Missing capsules 
+	Double capsules 
+	Capsule jams 
+________________________________________
+Station 2 – Separation
+Function:
+Cap ↑
+
+Body ↓
+Vacuum holds the cap.
+Body remains in lower segment.
+Possible defects:
+	Capsule not opening 
+	Cap damage 
+	Vacuum leakage 
+________________________________________
+Station 3 – Separation Verification / Transfer
+Based on your machine configuration, this station likely stabilizes the separated capsule before reaching filling.
+Purpose:
+Ensure body is open
+Ensure cap retained
+Possible defects:
+	Partial separation 
+	Body missing 
+	Cap drop 
+________________________________________
+Station 4 – Optional Pellet / Tablet Station
+This matches what you observed.
+When powder filling is not the only dosage form:
+Pellets
+Mini-tablets
+Tablets
+can be inserted.
+If powder-only product:
+Station inactive
+________________________________________
+Station 5 – Main ZRO Powder Filling Station
+This is the heart of the machine.
+ACG publicly states that the patented ZRO technology operates in the powder-filling station. 
+Function:
+Powder
+   ↓
+ZRO Filling System
+   ↓
+Capsule Body
+Unlike AF90 tamping slug formation:
+AF90
+Tamping Pins
+     ↓
+Powder Slug
+ZRO is designed for:
+Sticky Powders
+Fluffy Powders
+Fine Powders
+Low Dose Powders
+with reduced powder loss. 
+Typical defects:
+	Underweight 
+	Overweight 
+	Powder leakage 
+	Weight variation 
+________________________________________
+Station 6 – Unopened Capsule Rejection
+This is a very useful observation.
+Function:
+Machine checks:
+
+Was capsule opened?
+
+YES → Continue
+
+NO → Reject
+This prevents:
+Closed capsule
+      +
+Powder filling
+which would create serious defects.
+Typical causes of rejection:
+	Vacuum problem 
+	Capsule dimension variation 
+	Separation failure 
+	Capsule defects 
+________________________________________
+Station 7 – Optional Pellet / Tablet Station
+Your observation suggests this is another dosing station.
+Possible uses:
+Powder + Pellet
+
+Powder + Tablet
+
+Powder + Mini Tablet
+Combination products are supported by ZRO machines. 
+________________________________________
+Station 8 – Closing + Locking
+This observation is extremely important.
+I previously described rejoining and locking separately, but your machine apparently performs both together.
+Function:
+Cap
+ ↓
+
+Body
+
+ ↓
+
+Lock
+So:
+Rejoin
++
+Lock
+=
+One Station
+Typical defects:
+	Long lock 
+	Open capsules 
+	Loose lock 
+	Dent marks 
+This is exactly the station I would inspect first when investigating lock-length issues.
+________________________________________
+Station 9 – Ejection
+Function:
+Finished Capsule
+      ↓
+Ejector Pin
+      ↓
+Discharge Chute
+Typical defects:
+	Capsule accumulation 
+	Broken capsules 
+	Ejection failure 
+________________________________________
+Station 10 – Cleaning / Reset Position
+Likely functions:
+Air Blow
+
+Dust Removal
+
+Segment Preparation
+before returning to loading.
+________________________________________
+What This Means for Troubleshooting
+Now your machine can be simplified into four critical areas:
+Station	Critical Function	Common Complaint
+2	Separation	Capsule not opening
+5	ZRO Filling	Weight variation
+6	Rejection	High reject rate
+8	Closing + Locking	Long lock, open capsule
+9	Ejection	Capsule accumulation
+For the long-lock issue you mentioned earlier, based on this updated station map, I would focus on:
+Station 8
+   ↓
+Closing/Locking Assembly
+
+Upper Segment Alignment
+
+Lower Segment Alignment
+
+Capsule Dimensions
+
+Powder trapped between cap/body
+
+Pocket-specific wear
+
+
+
+
+
+
+How Many Tamping Pin Blocks?
+Typically:
+5 Tamping Stations
++
+1 Transfer Station
+The dosing disc rotates continuously beneath them. Each hole in the dosing disc passes under all five tamping pins sequentially. 
+________________________________________
+What Does Each Tamping Pin Do?
+Imagine one empty hole in the dosing disc.
+Initially:
+Hole
+
+[      ]
+fills with powder.
+________________________________________
+Tamping Pin 1
+Function
+Initial compaction.
+Loose Powder
+      ↓
+Light Compression
+Result:
+Powder Bed Begins Forming
+Purpose:
+	Remove large air spaces. 
+	Start slug formation. 
+________________________________________
+Tamping Pin 2
+Function
+Second-stage compression.
+Partially Compact Powder
+          ↓
+More Compression
+Purpose:
+	Increase density. 
+	Improve slug strength. 
+________________________________________
+Tamping Pin 3
+Function
+Intermediate compaction.
+Powder Density
+     ↑
+Purpose:
+	Build slug consistency. 
+	Reduce weight variation. 
+________________________________________
+Tamping Pin 4
+Function
+Near-final compaction.
+Almost Finished Slug
+Purpose:
+	Achieve target slug shape. 
+	Improve mechanical integrity. 
+________________________________________
+Tamping Pin 5
+Function
+Final slug formation.
+Finished Powder Slug
+At this point:
+Powder Plug
+is fully formed inside the dosing disc bore. 
+________________________________________
+Transfer Pin (6th Stroke)
+This is not a tamping pin.
+Its job is:
+Finished Slug
+      ↓
+Push Into Capsule Body
+The plug leaves the dosing disc and enters the open capsule body. 
+________________________________________
+Visual Sequence
+Powder Bed
+
+   ↓
+
+Pin 1
+   ↓
+
+Pin 2
+   ↓
+
+Pin 3
+   ↓
+
+Pin 4
+   ↓
+
+Pin 5
+
+Finished Slug
+
+   ↓
+
+Transfer Pin
+
+   ↓
+
+Capsule Body
+________________________________________
+Why 5 Tamping Pins Instead of 1?
+Suppose you compress powder in one stroke.
+Problem:
+Uneven Density
+
+Cracks
+
+Weight Variation
+Instead:
+Pin 1  Light Compression
+
+Pin 2  More Compression
+
+Pin 3  More Compression
+
+Pin 4  Near Final
+
+Pin 5  Final
+This creates a strong, uniform slug. 
+________________________________________
+Very Important for Troubleshooting
+If Tamping Pin 1 is wrongly set:
+Poor Powder Pickup
+If Tamping Pin 5 is wrongly set:
+Wrong Final Weight
+If any tamping pin sticks:
+Weight Variation
+If a tamping pin is worn:
+Slug Breakage
+If tamping depth changes:
+Underweight
+or
+Overweight Capsules
+________________________________________
+What You Should Observe During Changeover
+When maintenance assembles the AF90T, watch these items:
+	Dosing disc thickness. 
+	Tamping pin penetration depth. 
+	Scraper plate setting. 
+	Powder level in dosing bowl. 
+	Transfer pin alignment. 
+These five settings control most fill-weight issues on AF90T. 
+One thing I'd like to know from your machine: Can you physically see 5 separate tamping pin blocks arranged around the dosing disc, or do you see one assembly containing all 5 pins? Different AF90T installations can make them look very different even though the principle is the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The wiper block is one of the most important but least understood parts of a capsule filling machine, especially in AF90T and ZRO90.
+Many fill-weight, powder leakage, and dosing problems are actually related to the wiper block.
+________________________________________
+What is a Wiper Block?
+The wiper block is a component that:
+Levels Powder
+Removes Excess Powder
+Pushes Powder Into Dosing Area
+before filling occurs.
+Think of it as a mini bulldozer for powder.
+________________________________________
+Location
+Typically located near:
+Powder Bowl
+     ↓
+Dosing Disc
+     ↓
+Wiper Block
+________________________________________
+Why Is It Needed?
+Imagine the dosing disc rotating under the powder bed.
+Without a wiper:
+Too Much Powder
+
+Too Little Powder
+
+Uneven Powder
+can enter the dosing holes.
+Result:
+Weight Variation
+________________________________________
+Simple Diagram
+ Powder Bed
+██████████████
+
+      Wiper
+      ▓▓▓▓▓
+
+-------------------
+Dosing Disc
+ O O O O O O
+-------------------
+As the disc rotates:
+Powder
+     ↓
+Dosing Hole
+The wiper ensures each hole gets a consistent powder supply.
+________________________________________
+Main Functions
+Function 1: Powder Distribution
+Without wiper:
+Powder Heap
+forms in one area.
+With wiper:
+Powder Spread Evenly
+________________________________________
+Function 2: Remove Excess Powder
+Suppose a dosing hole contains:
+Too Much Powder
+The wiper removes the excess.
+Result:
+Uniform Fill Volume
+________________________________________
+Function 3: Assist Powder Flow
+For difficult blends:
+Sticky Blend
+
+Fluffy Blend
+
+Low Density Blend
+the wiper helps move powder toward the filling area.
+________________________________________
+In AF90T
+The dosing disc rotates.
+Dosing Disc
+     ↻
+The wiper:
+Levels Powder
+before the tamping pins act.
+Sequence:
+Powder
+ ↓
+Wiper
+ ↓
+Dosing Hole
+ ↓
+Tamping Pin 1
+ ↓
+Tamping Pin 2
+ ↓
+Tamping Pin 3
+ ↓
+Tamping Pin 4
+ ↓
+Tamping Pin 5
+________________________________________
+In ZRO90
+The principle is similar.
+Before powder enters the filling zone:
+Powder Bed
+     ↓
+Wiper Block
+     ↓
+Controlled Powder Layer
+________________________________________
+What Happens If Wiper Is Too Low?
+Wiper
+   ↓
+Touches Disc
+Results:
+	Excess friction 
+	Powder crushing 
+	Wear 
+	Motor load increase 
+Symptoms:
+Noise
+Heat
+Metal wear
+________________________________________
+What Happens If Wiper Is Too High?
+Large Gap
+Results:
+	Excess powder remains 
+	Uneven fill 
+	Weight variation 
+________________________________________
+Common Wiper Problems
+Problem 1
+Weight Variation
+Cause:
+Improper wiper gap.
+________________________________________
+Problem 2
+Powder Leakage
+Cause:
+Worn wiper.
+________________________________________
+Problem 3
+Inconsistent Fill Weight
+Cause:
+Powder buildup on wiper.
+________________________________________
+Problem 4
+Scratches on Disc
+Cause:
+Wiper touching disc.
+________________________________________
+During Changeover
+Maintenance normally checks:
+Wiper Condition
+
+Wiper Alignment
+
+Wiper Clearance
+
+Wiper Wear
+________________________________________
+What Production People Usually Observe
+If the machine suddenly shows:
+Weight Variation
+
+Powder Spillage
+
+Poor Filling
+one of the first components maintenance checks is:
+Wiper Block
+because it directly affects how powder is presented to the dosing system.
+________________________________________
+Easy Way to Remember
+Imagine a road construction bulldozer.
+Bulldozer
+      ↓
+Levels Soil
+The wiper block does the same thing:
+Wiper Block
+      ↓
+Levels Powder
+so every capsule receives a consistent amount of blend.
+
+
+How improper wiper block setting causes powder spillage:
+
+Wiper Gap Too Large
+        ↓
+Too much powder on dosing mechanism
+        ↓
+Overfilled transfer
+        ↓
+Powder falls during capsule movement
+        ↓
+Powder on turret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Supporting pad is present below the dosing disc that is cut the block 6 to deliver the powder slug
+Slider plates are present between dosing disc and supporting pad
+These slider plates move back and forth and slug delivery point 
+Guide block is present in which tamping pins blocks are inserted
+SS cover is present between guide block and dosing disc and this SS cover is attached with wiper block.
+Non separation pins, locking pins, ejection pins are on same plate 
+Cleaning pins are present next to on separate block with vacuum supply 
+Unopened capsules remain on body bushes at nonseparation cleaning pins they are removed and compressed air pushes them in to a bowl.
+
+Different gauges used in machine setting to check the alignment between different parts
+Bullet gauge to check alignment between rectifier block and magazine
+Sliding plates alignment 
+Dosing disc alignment pins are long 
+Body clamp rectifier block alignment 
+Body bush cap bush alignment 
+Alignment between dosing disc and body clamp is done when turret is removed
+
+
+
+In checkweigher ACURA 200  four types of fingers are present 
+Holding finger to hold the capsules 
+Releasing fingers to release the capsules 
+Pusher fingers to push the capsules on to the load cells
+Rotating fingers to remove the capsules from load cell and also stop the upcoming capsules to
+
+
+
+Gap between wiper block and dosing disc 
+Locking pad gap
+Rectifier block and magazine gap
+Cap bushes and body bushes gap
+
